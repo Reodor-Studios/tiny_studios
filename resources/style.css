@@ -1,25 +1,42 @@
-body {
-    font-family: 'DM Sans', sans-serif;
+html {
     background: #2A073E;
     color: #FFFBE3;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'DM Sans', sans-serif;
+    padding: 16px 16px;
+}
+
+.band {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
+  }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    max-width: 1440px;
-    overflow-x: hidden;
 }
 
-
-main {
+.value-prop {
     display: flex;
-    padding: 32px 104px;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    align-self: stretch;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
 .value-prop-cta {
@@ -27,14 +44,19 @@ main {
 }
 .texture {
     position: absolute;
-    right: 0;
     z-index: 0;
     filter: blur(194px);
-    max-width: 1440px;
 }
 
 .hero-image {
     z-index: 1;
+    padding: 48px 0px 0px 0px;
+}
+
+img {
+    z-index: 1;
+    width: 100%;
+    height: auto;
 }
 
 main button {
@@ -45,21 +67,12 @@ main button {
     gap: 8px;
     border-radius: 6px;
     background: #FFFBE3;
-    font-family: 'DM Sans', sans-serif;
     border: none;
 }
 
 main button:hover {
     background-color: #FFF5BE;
-}
-
-nav {
-    display: flex;
-    width: 100%;
-    padding: 40px 80px;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
+    cursor: pointer;
 }
 
 nav button {
@@ -70,7 +83,6 @@ nav button {
     gap: 8px;
     border-radius: 6px;
     border: 1px solid #FFFBE3;
-    font-family: 'DM Sans', sans-serif;
     background: none;
     color: #FFFBE3;
 }
@@ -82,12 +94,11 @@ nav button:hover {
 }
 
 .sign-up {
+    margin: 48px 0px 48px 0px;
     display: flex;
-    padding: 80px 104px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
     box-sizing: border-box;
     z-index: 1;
 }
@@ -112,7 +123,6 @@ nav button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* align-self: stretch; */
     box-sizing: border-box;
 }
 
@@ -126,9 +136,7 @@ nav button:hover {
 
 .email-input {
     display: flex;
-    align-items: flex-start;
     gap: 8px;
-    align-self: stretch;
 }
 
 .email-input button {
@@ -156,7 +164,6 @@ input {
     border-radius: 6px;
     border: 1px solid #553965;
     background: #553965;
-    font-family: 'DM Sans', sans-serif;
     color: #FFFBE3;
     width: 100%;
     height: auto;
@@ -164,12 +171,9 @@ input {
 
 footer {
     display: flex;
-    padding: 80px 104px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    align-self: stretch;
-    width: 100%;
     box-sizing: border-box;
 }
 
@@ -179,4 +183,14 @@ footer div {
     align-items: center;
     justify-content: center;
     gap: 16px;
+}
+
+@media only screen and (max-width: 480px) { 
+    .value-prop {
+        flex-direction: column;
+        align-items: left;
+    }
+    nav button {
+        display: none;
+    }
 }
