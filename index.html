@@ -3,51 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./resources/Ikon_app.png" type="png/x-icon">
+    <link rel="stylesheet" href="resources/style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap" rel="stylesheet">
     <title>Tiny Studios</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-logo">
-           <img src="tiny_studios.svg" alt=""> 
-        </div>
-        <div class="buttons">
-            <button type="button">Join waitlist <i class="ph ph-arrow-right"></i></button>
-        </div>
-    </nav>
-    <main>
-        <div class="value-prop-cta">
-            <h1>
-                Hassle-free dance studio management
-            </h1>
-            <button type="button">Join waitlist <i class="ph ph-arrow-right"></i></button>
-        </div>
-        <div class="texture">
-            <img src="ellipse_texture.svg" alt="">
-        </div> 
-        <div class="hero-image">
-            <img src="hero-img.png" alt="mockup of digital service">
-        </div>
-    </main>
-    <section class="sign-up">
-        <div class="input-container">
-            <div class="input-information">
-                <h2>Join the waitlist</h2>
-                <p>We’re just about to launch – sign up to be the first to know when we’re live</p>
+    <div class="band">
+        <nav>
+            <div class="nav-logo">
+            <img src="resources/tiny_studios.svg" alt=""> 
             </div>
-        <div class="email-input">
-            <input type="email" placeholder="Your email">
-            <button type="submit">Submit <i class="ph ph-arrow-right"></i></button>
-        </div>       
-        </div>
-    </section>
-    <footer>
-        <div>
-            <img src="tiny_studios.svg" alt="tiny studios logo">
-            <p>© 2024</p>
-        </div>
-    </footer>
+            <div>
+                <button class="ctabutton" type="button">Join waitlist <i class="ph ph-arrow-right"></i></button>
+            </div>
+        </nav>
+        <main>
+            <section class="value-prop">
+                <div class="value-prop-cta">
+                    <h1>
+                        Hassle-free dance studio management
+                    </h1>
+                    <button class="ctabutton" type="button">Join waitlist <i class="ph ph-arrow-right"></i></button>
+                </div>
+                <div class="texture">
+                    <img src="resources/ellipse_texture.svg" alt="">
+                </div> 
+                <div class="hero-image">
+                    <img src="resources/hero-img.png" alt="mockup of digital service">
+                </div>
+            </section>
+            <section class="sign-up">
+                <div class="input-container">
+                    <div class="input-information">
+                        <h2>Join the waitlist</h2>
+                        <p>We’re just about to launch – sign up to be the first to know when we’re live</p>
+                    </div>
+                    <div class="email-input">
+                    <!--<input class="inputdata" type="email" placeholder="Your email">-->
+                        <button class="ctabutton" type="submit">Join waitlist <i class="ph ph-arrow-right"></i></button>
+                    </div>       
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <img src="resources/tiny_studios.svg" alt="tiny studios logo">
+                <p>© 2024</p>
+            </div>
+        </footer>
+    </div>
+    <script src="resources/main.js"></script>
 </body>
 </html>
